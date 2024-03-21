@@ -6,10 +6,6 @@ exports.handler = async (event, context) => {
     // Retrieve the Job ID from the Lambda action
     var jobId = event["CodePipeline.job"].id;
 
-    // Retrieve the value of UserParameters from the Lambda action configuration in CodePipeline, in this case a URL which will be
-    // health checked by this function.
-    var url = event["CodePipeline.job"].data.actionConfiguration.configuration.UserParameters;
-
     // Custom logic to perform
     // ...
 
